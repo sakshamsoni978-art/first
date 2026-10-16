@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Anniversary Kez ❤️</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Georgia', serif;
+    background: linear-gradient(135deg, #180713, #48152e, #210817);
+    color: white;
+    text-align: center;
+}
+
+.hearts {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.heart {
+    position: absolute;
+    bottom: -50px;
+    color: #ff7da8;
+    opacity: 0.7;
+    animation: floatUp linear infinite;
+}
+
+@keyframes floatUp {
+    0% { transform: translateY(0) rotate(0); opacity: 0; }
+    15% { opacity: 0.8; }
+    100% { transform: translateY(-115vh) rotate(360deg); opacity: 0; }
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 760px;
+    padding: 65px 22px;
+    margin: auto;
+}
+
+.badge {
+    display: inline-block;
+    border: 1px solid #ff8eae88;
+    border-radius: 30px;
+    padding: 10px 18px;
+    color: #ffc0d3;
+    letter-spacing: 2px;
+    font-size: 12px;
+    margin-bottom: 28px;
+}
+
+h1 {
+    font-size: clamp(42px, 9vw, 76px);
+    line-height: 1.1;
+    color: #ffd1df;
+    text-shadow: 0 0 35px #ff477b55;
+    animation: appear 1.5s ease;
+}
+
+h1 span {
+    display: block;
+    font-style: italic;
+    color: #ff83ac;
+    margin-top: 12px;
+}
+
+.subtitle {
+    color: #f7c8d8;
+    margin-top: 25px;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.big-heart {
+    font-size: 70px;
+    margin: 28px 0;
+    animation: heartbeat 1.3s infinite;
+    filter: drop-shadow(0 0 20px #ff477b88);
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    15% { transform: scale(1.16); }
+    30% { transform: scale(1); }
+    45% { transform: scale(1.12); }
+}
+
+.card {
+    margin: 25px auto;
+    padding: 30px 24px;
+    background: #ffffff0b;
+    border: 1px solid #ffb6ce38;
+    border-radius: 24px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 15px 50px #00000025;
+}
+
+.card h2 {
+    color: #ffb5cd;
+    margin-bottom: 18px;
+    font-size: 27px;
+}
+
+.card p {
+    color: #fbe3ec;
+    font-size: 16px;
+    line-height: 1.95;
+}
+
+button {
+    background: linear-gradient(135deg, #ff8eb3, #ff477b);
+    color: #350d20;
+    border: none;
+    padding: 16px 27px;
+    border-radius: 35px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 12px 6px;
+    box-shadow: 0 7px 25px #ff477b35;
+    transition: transform .25s, box-shadow .25s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 32px #ff477b65;
+}
+
+#letter {
+    display: none;
+    animation: appear .8s ease;
+}
+
+@keyframes appear {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.promise {
+    color: #ffb5cd;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 1.8;
+    margin: 25px 0;
+}
+
+footer {
+    color: #dba8bb;
+    font-size: 13px;
+    padding: 25px 0 10px;
+    line-height: 2;
+}
+
+.sparkle {
+    color: #ffb5cd;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="hearts" id="hearts"></div>
+
+<main class="container">
+
+    <div class="badge">✦ A SPECIAL DAY FOR US ✦</div>
+
+    <h1>
+        Happy Anniversary
+        <span>Kez ❤️</span>
+    </h1>
+
+    <p class="subtitle">
+        One beautiful year, a thousand memories,<br>
+        and so many more moments waiting for us. 🥹
+    </p>
+
+    <div class="big-heart">❤️</div>
+
+    <section class="card">
+        <h2>To My Favourite Person 💌</h2>
+        <p>
+            Heyyy, my Kez! 🥹💕<br><br>
+            Do you know what makes today so special?
+            It's the day we celebrate one whole year of
+            being us. A year of smiles, silly moments,
+            cute conversations and memories that mean
+            so much to me.<br><br>
+            Out of all the people in this world,
+            I'm so happy that our paths crossed.
+            You have a special place in my heart,
+            and I'm grateful for every beautiful moment
+            we've shared. 🫶🏻
+        </p>
+    </section>
+
+    <button onclick="openLetter()">
+        Open Your Special Letter 💌
+    </button>
+
+    <section class="card" id="letter">
+        <h2>My Dearest Kez 🥹❤️</h2>
+
+        <p>
+            Happy first anniversary, meri jaan! 💗<br><br>
+
+            Ek saal ho gaya humein saath mein,
+            aur tum mere liye aaj bhi utni hi special ho.
+            Tumhari baatein, tumhari smile aur tumhara
+            meri life ka part hona mere liye bahut
+            precious hai. 🫂❤️<br><br>
+
+            I know we're not perfect. Kabhi chhoti
+            si fights hoti hain, kabhi misunderstandings
+            bhi ho jaati hain, but I want us to keep
+            learning, understanding and respecting
+            each other.<br><br>
+
+            Main chahta hoon ki tum mere saath hamesha
+            comfortable raho, apni feelings bina dare
+            share kar sako aur khud bhi hamesha khush
+            raho. Tumhari feelings aur tumhari happiness
+            mere liye important hain. ❤️<br><br>
+
+            I don't expect every day to be perfect.
+            I just hope we keep choosing kindness,
+            honesty and understanding, even on the
+            difficult days. 🥹💕
+        </p>
+
+        <div class="promise">
+            "One year of us,<br>
+            and countless beautiful memories still
+            waiting to be made." ♾️
+        </div>
+
+        <p>
+            Thank you for being you, Kez.
+            Thank you for this beautiful year.<br><br>
+
+            Happy Anniversary, meri favourite person! 💋<br>
+            You are loved, today and always. ❤️🧿
+        </p>
+
+        <div class="big-heart">💗</div>
+    </section>
+
+    <section class="card">
+        <h2>One Last Thing... 💍</h2>
+        <p>
+            If I could relive this year again,
+            I'd still be happy to have met you
+            and created these memories with you. 🥹❤️
+        </p>
+        <p class="promise">
+            Happy 1st Anniversary, Kez! 🫶🏻
+        </p>
+    </section>
+
+    <footer>
+        Made with ❤️, just for Kez.<br>
+        <span class="sparkle">✦ You & Me & Beautiful Memories ✦</span>
+    </footer>
+
+</main>
+
+<script>
+const hearts = document.getElementById("hearts");
+
+for (let i = 0; i < 32; i++) {
+    const heart = document.createElement("div");
+    heart.className = "heart";
+    heart.innerHTML = ["♥", "♡", "❤", "✦"][i % 4];
+
+    heart.style.left = Math.random() * 100 + "%";
+    heart.style.animationDuration = (6 + Math.random() * 9) + "s";
+    heart.style.animationDelay = (Math.random() * 10) + "s";
+    heart.style.fontSize = (12 + Math.random() * 23) + "px";
+
+    hearts.appendChild(heart);
+}
+
+function openLetter() {
+    const letter = document.getElementById("letter");
+    letter.style.display = "block";
+
+    letter.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+    });
+
+    createBurst();
+}
+
+function createBurst() {
+    const symbols = ["❤️", "💗", "💕", "✨", "💖"];
+
+    for (let i = 0; i < 24; i++) {
+        const item = document.createElement("div");
+
+        item.innerText = symbols[
+            Math.floor(Math.random() * symbols.length)
+        ];
+
+        item.style.position = "fixed";
+        item.style.left = Math.random() * 100 + "vw";
+        item.style.top = "-30px";
+        item.style.fontSize = (16 + Math.random() * 20) + "px";
+        item.style.zIndex = "10";
+        item.style.pointerEvents = "none";
+        item.style.transition = "transform 3s linear, opacity 3s";
+        document.body.appendChild(item);
+
+        requestAnimationFrame(() => {
+            item.style.transform =
+                `translateY(${window.innerHeight + 60}px) rotate(${Math.random() * 500}deg)`;
+            item.style.opacity = "0";
+        });
+
+        setTimeout(() => item.remove(), 3200);
+    }
+}
+</script>
+
+</body>
+</html>
